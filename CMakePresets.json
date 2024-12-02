@@ -9,7 +9,9 @@
             "installDir": "${sourceDir}/out/install/${presetName}",
             "cacheVariables": {
                 "CMAKE_C_COMPILER": "cl.exe",
-                "CMAKE_CXX_COMPILER": "cl.exe"
+                "CMAKE_CXX_COMPILER": "cl.exe",
+                "CMAKE_SYSTEM_NAME": "Windows",
+                "CMAKE_SYSTEM_PROCESSOR": "ARM64"
             },
             "condition": {
                 "type": "equals",
@@ -22,13 +24,15 @@
             "displayName": "Windows ARM Debug",
             "inherits": "windows-base",
             "architecture": {
-                "value": "ARM",
+                "value": "ARM64",
                 "strategy": "external"
             },
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Debug",
-                "CMAKE_C_COMPILER": "cl.exe",
-                "CMAKE_CXX_COMPILER": "cl.exe"
+                "CMAKE_C_COMPILER": "cl.exe", 
+                "CMAKE_CXX_COMPILER": "cl.exe",
+                "CMAKE_SYSTEM_NAME": "Windows",
+                "CMAKE_SYSTEM_PROCESSOR": "ARM64"
             }
         },
         {
